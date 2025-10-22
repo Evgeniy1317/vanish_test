@@ -1,0 +1,115 @@
+/* Additional styles that cannot be achieved with Tailwind CSS */
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu-open {
+        display: flex !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        flex-direction: column;
+        padding: 16px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .mobile-menu-open .nav-link {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(52, 57, 62, 0.1);
+    }
+    
+    .mobile-menu-open .nav-link:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Custom hover effects for navigation links */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3152FE;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* CTA Button pulse effect */
+button[class*="bg-[#3152FE]"] {
+    position: relative;
+    overflow: hidden;
+}
+
+button[class*="bg-[#3152FE]"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+button[class*="bg-[#3152FE]"]:hover::before {
+    left: 100%;
+}
+
+/* Logo click styles */
+.logo-link {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-link:active {
+    opacity: 0.6;
+}
+
+/* Mobile navigation styles */
+.mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobile-nav-link {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(52, 57, 62, 0.1);
+    color: #34393E;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.mobile-nav-link:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav-link:hover {
+    color: #3152FE;
+}

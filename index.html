@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanish Web - Landing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Flex:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300">
+        <div class="max-w-[1200px] mx-auto h-20 bg-white/60 backdrop-blur-sm rounded-[20px] m-4 shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
+            <div class="relative flex items-center h-full px-6">
+                <!-- Main Vanish Logo -->
+                <a href="#" class="logo-link flex items-center" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                    <img src="assets/vanish-logo.svg" alt="Vanish Logo" class="w-[114px] h-8">
+                </a>
+                
+                <!-- Logo Alt:V -->
+                <div class="flex items-center gap-1.5 ml-[30px]">
+                    <img src="assets/logo-green.svg" alt="Alt:V Logo" class="w-6 h-6">
+                    <span class="text-[#0F1113] font-normal text-base" style="font-family: sans-serif;">Alt:V</span>
+                    <img src="assets/arrow-icon.svg" alt="Arrow" class="w-2 h-4">
+                </div>
+                
+                <!-- Navigation - positioned at x: 363px from left -->
+                <nav class="hidden md:flex items-center gap-8 absolute left-[363px] top-1/2 transform -translate-y-1/2">
+                    <a href="#advantages" class="text-[#34393E] text-base font-normal hover:text-[#3152FE] transition-colors" style="font-family: sans-serif;">Преимущества</a>
+                    <a href="#pricing" class="text-[#34393E] text-base font-normal hover:text-[#3152FE] transition-colors" style="font-family: sans-serif;">Цены</a>
+                    <a href="#reviews" class="text-[#34393E] text-base font-normal hover:text-[#3152FE] transition-colors" style="font-family: sans-serif;">Обзоры</a>
+                    <a href="#features" class="text-[#34393E] text-base font-normal hover:text-[#3152FE] transition-colors" style="font-family: sans-serif;">Функции</a>
+                    <a href="#discord" class="text-[#34393E] text-base font-normal hover:text-[#3152FE] transition-colors" style="font-family: sans-serif;">Discord</a>
+                </nav>
+
+                <!-- CTA Button - positioned with 17.5px offset from right edge -->
+                <button class="bg-[#3152FE] text-white px-4 py-2.5 rounded-xl border border-white/20 hover:bg-[#2a47e5] transition-colors font-medium text-base h-[42px] absolute right-[17.5px] top-1/2 transform -translate-y-1/2 leading-[1.3]" style="font-family: sans-serif;">
+                    Купить сейчас от 250₽
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 mobile-menu-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="#34393E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Navigation Menu -->
+                <nav class="mobile-nav hidden md:hidden">
+                    <a href="#advantages" class="mobile-nav-link">Преимущества</a>
+                    <a href="#pricing" class="mobile-nav-link">Цены</a>
+                    <a href="#reviews" class="mobile-nav-link">Обзоры</a>
+                    <a href="#features" class="mobile-nav-link">Функции</a>
+                    <a href="#discord" class="mobile-nav-link">Discord</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="bg-gray-50" style="height: 740px;">
+            <div class="max-w-[1400px] mx-auto relative h-full">
+                <!-- Left Content - Frame 36085 -->
+                <div class="absolute left-0 top-[228px] w-[690px] flex flex-col items-center gap-4" style="left: 0; top: 228px;">
+                    <!-- Badge -->
+                    <div class="bg-white/80 backdrop-blur-sm rounded-xl px-4 py-2 shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)] flex items-center gap-2">
+                        <span class="text-[#34393E] text-[14.1px] font-normal" style="font-family: sans-serif; font-weight: 400; line-height: 1.39;">Шанс бана менее 1%</span>
+                        <div class="w-[4.57px] h-[14px] flex items-center justify-center">
+                            <span class="text-[#34393E] text-[13.9px] font-normal" style="font-family: sans-serif; font-weight: 400; line-height: 1.007; letter-spacing: 1.007%;">•</span>
+                        </div>
+                        <div class="flex items-center gap-[3px]">
+                            <span class="text-[#34393E] text-[14.3px] font-normal" style="font-family: sans-serif; font-weight: 400; line-height: 0.979; letter-spacing: 0.979%;">Подробнее</span>
+                            <img src="assets/arrow-right-icon.svg" alt="Arrow" class="w-4 h-4">
+                        </div>
+                    </div>
+                    
+                    <!-- Main Heading -->
+                    <h1 class="text-[#0F1113] text-center" style="font-family: Roboto Flex !important; font-weight: 700 !important; font-size: 64px !important; line-height: 100% !important; letter-spacing: -1px !important;">
+                        Самый безопасный<br>
+                        чит для Alt:V
+                    </h1>
+                    
+                    <!-- Subheading -->
+                    <p class="text-[#34393E] text-center" style="font-family: sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                        Получайте максимум без рисков!
+                    </p>
+                    
+                    <!-- CTA Section -->
+                    <div class="flex flex-col items-center gap-3">
+                        <button class="bg-[#3152FE] text-white px-4 py-2.5 rounded-xl border border-white/20 hover:bg-[#2a47e5] transition-colors h-[42px]" style="font-family: sans-serif; font-weight: 500; font-size: 16px; line-height: 1.3;">
+                            Купить сейчас от 250₽
+                        </button>
+                        <p class="text-[#34393E] text-center" style="font-family: sans-serif; font-weight: 400; font-size: 11.8px; line-height: 1.424;">
+                            Crypto, MIR, PayPal
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Right Content - Group 4 -->
+                <div class="absolute top-0 w-[853px] h-[740px]" style="left: 559px;">
+                    <img src="assets/hero-game-image.png" alt="Game Screenshot" class="w-full h-full object-cover">
+                    
+                    <!-- UI Elements with exact coordinates from Figma -->
+                    <div class="absolute top-[33px] left-[64px] bg-[#F99F19] px-2.5 py-2.5 rounded text-[#23211D] text-[15px] font-medium">
+                        100 HP
+                    </div>
+                    <div class="absolute top-[308px] right-[181px] bg-[#F99F19] px-2.5 py-2.5 rounded text-[#23211D] text-[15px] font-medium">
+                        Assault Rifle
+                    </div>
+                    <div class="absolute bottom-[231px] left-[273px] bg-[#F99F19] px-2.5 py-2.5 rounded text-[#23211D] text-[15px] font-medium">
+                        Aimbot: ON
+                    </div>
+                    <div class="absolute bottom-[192px] left-[273px] bg-[#F99F19] px-2.5 py-2.5 rounded text-[#23211D] text-[15px] font-medium">
+                        Damage Multiplier: ON
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section id="advantages" class="py-32">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- First Row: 3 Cards -->
+                <div class="flex items-center gap-4 mb-4">
+                    <!-- Card 1: Самый точный аимбот -->
+                    <div class="w-[691px] h-[480px] rounded-3xl border border-[rgba(15,17,19,0.1)] p-0 relative overflow-hidden" style="background: #3152FE;">
+                        <!-- Background Image -->
+                        <div class="absolute w-[1130px] h-[636px] left-[-119.5px] top-[80px]" style="background: url('assets/gta-doomsday-artwork.png'); background-size: cover; background-position: center;"></div>
+                        
+                        <!-- Decorative Circles -->
+                        <div class="absolute top-[-392px] left-[-623px] w-[1312px] h-[1312px] border-4 border-[#3152FE] border-white rounded-full opacity-40"></div>
+                        <div class="absolute top-[-134px] left-[-364px] w-[795px] h-[795px] border-4 border-[#3152FE] border-white rounded-full opacity-60 border-dashed"></div>
+                        <div class="absolute top-[104px] left-[-125px] w-[317px] h-[317px] border-[3px] border-[#3152FE] border-white rounded-full"></div>
+                        
+                        <!-- Crosshair Icon -->
+                        <div class="absolute top-[230px] left-[10px] w-11 h-11">
+                            <img src="assets/crosshair-icon.svg" alt="Crosshair" class="w-full h-full">
+                        </div>
+                        
+                        <!-- Content -->
+                        <div class="absolute top-0 left-[0.5px] w-[691px] h-[166px] flex flex-col items-center gap-[8px] p-[42px]">
+                            <h3 class="text-[48px] font-bold text-white text-center" style="font-family: Roboto Flex; font-weight: 700; line-height: 1em; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">
+                                Самый точный аимбот
+                            </h3>
+                            <p class="text-[20px] text-white text-center" style="font-family: sans-serif; font-weight: 400; line-height: 1.3em; background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">
+                                Перестреливает всех противников
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: 154 Checks -->
+                    <div class="w-[337px] h-[480px] rounded-3xl border border-[rgba(15,17,19,0.1)] flex flex-col justify-center items-center gap-4 p-9" style="background: rgba(49, 82, 254, 0.1), #FFFFFF, linear-gradient(160deg, rgba(254, 180, 175, 0) 4%, rgba(251, 212, 189, 0.4) 34%, rgba(254, 180, 175, 0.1) 77%, rgba(254, 180, 175, 0) 89%), #F4F6F8;">
+                        <img src="assets/154-number.png" alt="154" class="w-[235px] h-[128px] object-contain">
+                        <p class="text-center" style="font-family: sans-serif; font-weight: 400; font-style: normal; font-size: 20px; line-height: 100%; letter-spacing: 0px; text-align: center; color: #34393E;">
+                            Проверки пройдено на различных серверах
+                        </p>
+                    </div>
+
+                    <!-- Card 3: Configs -->
+                    <div class="w-[337px] h-[480px] rounded-3xl border border-[rgba(15,17,19,0.1)] flex flex-col items-center gap-9 p-9 relative" style="background: #FFFFFF, linear-gradient(173deg, rgba(217, 175, 254, 0) 2%, rgba(251, 189, 221, 0.4) 44%, rgba(217, 175, 254, 0.1) 81%, rgba(217, 175, 254, 0) 100%), #F4F6F8;">
+                        <!-- Header -->
+                        <div class="flex flex-col items-center gap-2">
+                            <h3 class="text-[32px] font-semibold text-[#0F1113] text-center" style="font-family: Roboto Flex; font-weight: 600; font-size: 32px; line-height: 1em;">
+                                Конфиги
+                            </h3>
+                            <p class="text-[20px] text-[#34393E] text-center" style="font-family: sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                                Сохраняйте и загружайте конфигурацию чита
+                            </p>
+                        </div>
+
+                        <!-- Config Options -->
+                        <div class="flex flex-col justify-start items-start gap-2 w-[280px] h-[280px] relative z-10" style="flex: none; order: 1; flex-grow: 0;">
+                            <!-- Legit Config -->
+                            <div class="flex flex-col gap-6 p-4 border-2 border-[#3152FE] rounded-xl" style="align-self: stretch;">
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <img src="assets/floppy-disk-icon.svg" alt="Floppy Disk" class="w-6 h-6">
+                                    <img src="assets/radio-button-active.svg" alt="Radio Active" class="w-5 h-5">
+                                </div>
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <span class="text-base font-medium text-[#020203]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Legit</span>
+                                    <span class="text-base font-medium text-[#34393E] opacity-60" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Cloud save</span>
+                                </div>
+                            </div>
+
+                            <!-- Rage Config -->
+                            <div class="flex flex-col gap-6 p-4 border border-[rgba(120,120,128,0.1)] rounded-xl" style="align-self: stretch;">
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <img src="assets/floppy-disk-icon-2.svg" alt="Floppy Disk" class="w-6 h-6">
+                                    <img src="assets/radio-button-inactive.svg" alt="Radio Inactive" class="w-5 h-5">
+                                </div>
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <span class="text-base font-medium text-[#020203]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Rage</span>
+                                    <span class="text-base font-medium text-[#34393E] opacity-60" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Cloud save</span>
+                                </div>
+                            </div>
+
+                            <!-- Semirage Config -->
+                            <div class="flex flex-col gap-6 p-4 border border-[rgba(120,120,128,0.1)] rounded-xl" style="align-self: stretch;">
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <img src="assets/floppy-disk-icon-3.svg" alt="Floppy Disk" class="w-6 h-6">
+                                    <img src="assets/radio-button-inactive.svg" alt="Radio Inactive" class="w-5 h-5">
+                                </div>
+                                <div class="flex justify-between items-center gap-6" style="align-self: stretch;">
+                                    <span class="text-base font-medium text-[#020203]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Semirage</span>
+                                    <span class="text-base font-medium text-[#34393E] opacity-60" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Cloud save</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gradient Overlay -->
+                        <div class="absolute bottom-0 left-[0.5px] w-[337px] h-[100px] bg-gradient-to-t from-white to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Second Row: 3 Cards -->
+                <div class="flex items-center gap-4">
+                    <!-- Card 4: 99% Undetected -->
+                    <div class="w-[337px] h-[480px] rounded-3xl border border-[rgba(15,17,19,0.1)] flex flex-col justify-center items-center gap-4 p-9" style="background: #FFFFFF, linear-gradient(160deg, rgba(254, 180, 175, 0) 4%, rgba(251, 212, 189, 0.4) 34%, rgba(254, 180, 175, 0.1) 77%, rgba(254, 180, 175, 0) 89%), #F4F6F8;">
+                        <!-- Progress Bar -->
+                        <img src="assets/progress-bar.svg" alt="Progress Bar" class="w-[280px] h-9">
+                        
+                        <!-- Percentage -->
+                        <img src="assets/99-percent.png" alt="99%" class="w-auto h-auto">
+                        
+                        <!-- Description -->
+                        <p class="text-[20px] text-[#34393E] text-center" style="font-family: sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                            Времени Undetected
+                        </p>
+                    </div>
+
+                    <!-- Card 5: Script Executor -->
+                    <div class="w-[692px] h-[480px] rounded-3xl border border-[rgba(15,17,19,0.1)] p-0 relative overflow-hidden" style="background: linear-gradient(180deg, rgba(49, 82, 254, 0) 0%, rgba(49, 82, 254, 1) 100%), #3152FE, #FFFFFF, linear-gradient(177deg, rgba(175, 212, 254, 0) 0%, rgba(175, 212, 254, 0.4) 27%, rgba(175, 212, 254, 0.1) 62%, rgba(175, 212, 254, 0) 95%), #F4F6F8;">
+                        <!-- Code Editor -->
+                        <div class="absolute top-[166px] left-9 w-[620px]">
+                            <img src="assets/code-block.png" alt="Code Block" class="w-full h-auto rounded-2xl">
+                        </div>
+                        
+                        <!-- Content -->
+                        <div class="absolute top-0 left-1 w-[691px] flex flex-col items-center gap-2 pt-[42px] pb-[42px]">
+                            <h3 class="text-[48px] font-bold text-[#3152FE] text-center" style="font-family: Roboto Flex; font-weight: 700; line-height: 1em;">
+                                Script executor
+                            </h3>
+                           <p class="text-[20px] text-[#34393E] text-center" style="font-family: sans-serif; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                               Позволяет вам кастомизировать поведение чита через скрипты
+                           </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Alt:V Bypass -->
+                    <div class="w-[339px] h-[480px] bg-[#008736] rounded-3xl border border-[rgba(15,17,19,0.1)] p-9 flex flex-col justify-center items-center gap-4">
+                        <h3 class="text-[32px] font-semibold text-[rgba(255,255,255,0.9)] text-center" style="font-family: Roboto Flex; font-weight: 600; font-size: 32px; line-height: 1em;">
+                            Обходим
+                        </h3>
+                        
+                        <!-- Alt:V Logo -->
+                        <div class="flex items-center gap-3">
+                            <img src="assets/altv-logo-icon.svg" alt="Alt:V Icon" class="w-[61px] h-[53px]">
+                            <span class="text-[32px] font-extrabold text-white" style="font-family: Object Sans; font-weight: 800; font-size: 32px; line-height: 1em; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">ALT:V</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functions Section -->
+        <section id="features" class="py-32">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Header -->
+                <div class="flex flex-col items-center gap-4 mb-16">
+                    <h2 class="text-[64px] font-bold text-[#0F1113] text-center" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">
+                        Функции
+                    </h2>
+                    <p class="text-[20px] text-[#0F1113] text-center" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                        Ознакомьтесь с функционалом чита перед покупкой
+                    </p>
+                </div>
+
+                <!-- Categories and Functions -->
+                <div class="flex flex-col gap-6">
+                    <!-- Categories Row -->
+                    <div class="flex gap-2.5">
+                        <!-- Aimbot Category -->
+                        <div class="flex-1 bg-[#3152FE] rounded-2xl p-9 flex flex-col gap-2">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/target-icon.svg" alt="Target" class="w-9 h-9">
+                                <h3 class="text-[32px] font-bold text-white" style="font-family: Roboto Flex; font-weight: 700; font-size: 32px; line-height: 1em;">Aimbot</h3>
+                            </div>
+                            <p class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em; background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">
+                                Функции для PVP
+                            </p>
+                        </div>
+
+                        <!-- Visuals Category -->
+                        <div class="flex-1 bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-9 flex flex-col gap-2">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/eye-icon.svg" alt="Eye" class="w-9 h-9 opacity-70">
+                                <h3 class="text-[32px] font-bold text-[#0F1113]" style="font-family: Roboto Flex; font-weight: 700; font-size: 32px; line-height: 1em;">Visuals</h3>
+                            </div>
+                            <p class="text-[20px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                                Визуальная часть
+                            </p>
+                        </div>
+
+                        <!-- Global Category -->
+                        <div class="flex-1 bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-9 flex flex-col gap-2">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/globe-icon.svg" alt="Globe" class="w-9 h-9 opacity-70">
+                                <h3 class="text-[32px] font-bold text-[#0F1113]" style="font-family: Roboto Flex; font-weight: 700; font-size: 32px; line-height: 1em;">Global</h3>
+                            </div>
+                            <p class="text-[20px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                                Описание раздела
+                            </p>
+                        </div>
+
+                        <!-- Misc Category -->
+                        <div class="flex-1 bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-9 flex flex-col gap-2">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/ellipsis-icon.svg" alt="Ellipsis" class="w-9 h-9 opacity-70">
+                                <h3 class="text-[32px] font-bold text-[#0F1113]" style="font-family: Roboto Flex; font-weight: 700; font-size: 32px; line-height: 1em;">Misc</h3>
+                            </div>
+                            <p class="text-[20px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                                Описание раздела
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Functions Grid -->
+                    <div class="bg-white border border-[rgba(15,17,19,0.05)] rounded-3xl p-2 grid grid-cols-4 gap-2">
+                        <!-- Aimbot -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Aimbot</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Наводит прицел на врагов</p>
+                            </div>
+                        </div>
+
+                        <!-- Triggerbot -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Triggerbot</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Стреляет при наведении</p>
+                            </div>
+                        </div>
+
+                        <!-- Delay -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Delay</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Задержка между выстрелом</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 1 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 2 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 3 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 4 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 5 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 6 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                        <!-- Function 7 -->
+                        <div class="bg-white border border-[rgba(15,17,19,0.1)] rounded-2xl p-4 flex items-center gap-4">
+                            <img src="assets/component-icon.svg" alt="Component" class="w-6 h-6 opacity-70">
+                            <div class="flex flex-col gap-0.5">
+                                <h4 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Function</h4>
+                                <p class="text-[16px] text-[#0F1113] opacity-70" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Описание</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-32">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Header -->
+                <div class="flex flex-col items-center gap-4 mb-16">
+                    <h2 class="text-[64px] font-bold text-[#0F1113] text-center" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">
+                        Подписки
+                    </h2>
+                    <p class="text-[20px] text-[#34393E] text-center" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                        Подберите выгодный тариф под себя
+                    </p>
+                </div>
+
+                <!-- Pricing Cards -->
+                <div class="flex gap-4">
+                    <!-- Card 1: Дешевое -->
+                    <div class="flex-1 bg-white border border-[rgba(15,17,19,0.1)] rounded-3xl p-7 flex flex-col gap-9">
+                        <!-- Header -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 500; font-size: 20px; line-height: 1.3em;">Дешевое</h3>
+                            <div class="flex items-end gap-2">
+                                <span class="text-[64px] font-bold text-[#0F1113]" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">280 ₽</span>
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">/ 14 дней</span>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <button class="w-full bg-white border border-[rgba(15,17,19,0.1)] rounded-xl py-4 px-4 flex items-center justify-center gap-2">
+                            <span class="text-[16px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Купить</span>
+                        </button>
+
+                        <!-- Features -->
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/life-ring-icon.svg" alt="Support" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Поддержка 24/7</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/shopping-bag-icon.svg" alt="Market" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Доступ к маркету</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/arrow-rotate-left-icon.svg" alt="Reset" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">1 сброс HWID'а</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Популярное -->
+                    <div class="flex-1 bg-[#3152FE] border border-[rgba(15,17,19,0.1)] rounded-3xl p-7 flex flex-col gap-9">
+                        <!-- Header -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[20px] font-medium text-white" style="font-family: Geist; font-weight: 500; font-size: 20px; line-height: 1.3em;">Популярное</h3>
+                            <div class="flex items-end gap-2">
+                                <span class="text-[64px] font-bold text-white" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">600 ₽</span>
+                                <span class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em; background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-shadow: 0px 2px 4px rgba(0,0,0,0.25);">/ 30 дней</span>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <button class="w-full bg-white border border-[rgba(15,17,19,0.1)] rounded-xl py-4 px-4 flex items-center justify-center gap-2">
+                            <span class="text-[16px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Купить</span>
+                        </button>
+
+                        <!-- Features -->
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/life-ring-icon.svg" alt="Support" class="w-4 h-4 brightness-0 invert">
+                                <span class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Поддержка 24/7</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/shopping-bag-icon.svg" alt="Market" class="w-4 h-4 brightness-0 invert">
+                                <span class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Доступ к маркету</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/arrow-rotate-left-icon.svg" alt="Reset" class="w-4 h-4 brightness-0 invert">
+                                <span class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">2 сброса HWID'а</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Выгодное -->
+                    <div class="flex-1 bg-white border border-[rgba(15,17,19,0.1)] rounded-3xl p-7 flex flex-col gap-9">
+                        <!-- Header -->
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-[20px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 500; font-size: 20px; line-height: 1.3em; background: linear-gradient(90deg, rgba(49, 82, 254, 1) 0%, rgba(158, 49, 254, 1) 100%), linear-gradient(90deg, rgba(255, 178, 0, 1) 0%, rgba(255, 51, 156, 1) 62%, rgba(183, 102, 255, 1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Выгодное</h3>
+                            <div class="flex items-end gap-2">
+                                <span class="text-[64px] font-bold text-[#0F1113]" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">1800 ₽</span>
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">/ 90 дней</span>
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <button class="w-full bg-white border border-[rgba(15,17,19,0.1)] rounded-xl py-4 px-4 flex items-center justify-center gap-2">
+                            <span class="text-[16px] font-medium text-[#0F1113]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Купить</span>
+                        </button>
+
+                        <!-- Features -->
+                        <div class="flex flex-col gap-3">
+                            <div class="flex items-center gap-3">
+                                <img src="assets/life-ring-icon.svg" alt="Support" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Поддержка 24/7</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/shopping-bag-icon.svg" alt="Market" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Доступ к маркету</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="assets/arrow-rotate-left-icon.svg" alt="Reset" class="w-4 h-4">
+                                <span class="text-[20px] text-[#34393E]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">3 сброса HWID'а</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section id="reviews" class="py-32">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Header -->
+                <div class="flex flex-col items-center gap-4 mb-16">
+                    <h2 class="text-[64px] font-bold text-[#0F1113] text-center" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">
+                        Обзор
+                    </h2>
+                    <p class="text-[20px] text-[#0F1113] text-center" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">
+                        Подробный видео-обзор нашего чита
+                    </p>
+                </div>
+
+                <!-- Video Player -->
+                <div class="relative bg-white border border-[rgba(15,17,19,0.1)] rounded-3xl overflow-hidden" style="height: 787px;">
+                    <!-- Video Thumbnail -->
+                    <div class="absolute" style="left: -11px; right: -11px; top: -6px; bottom: -6px;">
+                        <img src="assets/video-thumbnail.png" alt="Video Thumbnail" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Video Controls Overlay -->
+                    <div class="absolute bottom-0 left-0 right-0 p-9" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);">
+                        <!-- Controls Row -->
+                        <div class="flex items-center gap-2 mb-6" style="width: 1328px; height: 26px; flex: none; order: 0; align-self: stretch; flex-grow: 0;">
+                            <!-- Play Button and Time -->
+                            <div class="flex items-center gap-4">
+                                <img src="assets/play-icon-frame.svg" alt="Play" class="w-6 h-6">
+                                <span class="text-[20px] text-white" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">0:10 / 0:41</span>
+                            </div>
+                            
+                            <!-- Progress Bar -->
+                            <div class="flex-1 h-1 bg-[#D9D9D9] rounded-full"></div>
+                            
+                            <!-- Controls -->
+                            <div class="flex items-center gap-6">
+                                <img src="assets/controls-frame.svg" alt="Controls" class="w-[72px] h-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discord Section -->
+        <section id="discord" class="py-32">
+            <div class="max-w-[1400px] mx-auto px-4">
+                <!-- Discord Card -->
+                <div class="relative bg-[#35363F] rounded-3xl overflow-hidden" style="width: 100%; height: 340px;">
+                    <!-- Discord Vector -->
+                    <div class="absolute" style="right: -40px; top: -80px;">
+                        <img src="assets/discord-vector.svg" alt="Discord Vector" class="w-[514px] h-[456px]">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="absolute" style="left: 60px; top: 40px;">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-[64px] font-bold text-[#EBEFF7]" style="font-family: Roboto Flex; font-weight: 700; font-size: 64px; line-height: 1em; letter-spacing: -1.5625%;">
+                                Заходите в наш дискорд
+                            </h2>
+                            <p class="text-[20px] text-[#D3E0FC]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em; width: 709px;">
+                                Узнавайте последние новости, общайтесь с другими пользователями,<br>
+                                задавайте вопросы на нашем сервере
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="absolute" style="left: 60px; top: 200px;">
+                        <button class="w-[320px] h-12 bg-[#5765F2] border border-[rgba(255,255,255,0.2)] rounded-xl flex items-center justify-center gap-2">
+                            <span class="text-[16px] font-medium text-[rgba(255,255,255,0.9)]" style="font-family: Geist; font-weight: 500; font-size: 16px; line-height: 1.3em;">Присоединиться</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[rgba(255,255,255,0.8)] rounded-t-3xl mx-auto" style="width: 1400px; height: 356px; flex: none; order: 6; align-self: stretch; flex-grow: 0;">
+            <div class="flex flex-col items-start gap-11 p-16 h-full">
+                <!-- Logo -->
+                <div class="w-full h-12">
+                    <img src="assets/footer-logo.svg" alt="Vanish Logo" class="h-12">
+                </div>
+
+                <!-- Main Footer Content -->
+                <div class="flex justify-between items-center w-full gap-8">
+                    <!-- Left Side -->
+                    <span class="text-[20px] text-[#4F5C68]" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Чит для Alt:V</span>
+
+                    <!-- Right Side - Navigation Links -->
+                    <div class="flex items-center gap-8">
+                        <a href="#advantages" class="text-[20px] text-[#0F1113] hover:text-[#3152FE] transition-colors" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Преимущества</a>
+                        <a href="#pricing" class="text-[20px] text-[#0F1113] hover:text-[#3152FE] transition-colors" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Подписки</a>
+                        <a href="#review" class="text-[20px] text-[#0F1113] hover:text-[#3152FE] transition-colors" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Видео-обзор</a>
+                        <a href="#functions" class="text-[20px] text-[#0F1113] hover:text-[#3152FE] transition-colors" style="font-family: Geist; font-weight: 400; font-size: 20px; line-height: 1.3em;">Функции</a>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="w-full h-px bg-[rgba(15,17,19,0.1)]"></div>
+
+                <!-- Bottom Footer -->
+                <div class="flex items-center gap-2.5">
+                    <span class="text-[16px] text-[#4F5C68]" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">© Vanish</span>
+                    <div class="w-px h-3 bg-[#4F5C68]"></div>
+                    <span class="text-[16px] text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">Пользовательское соглашение</span>
+                    <div class="w-px h-3 bg-[#4F5C68]"></div>
+                    <span class="text-[16px] text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">ИП Иванов Иван Иванович</span>
+                    <div class="w-px h-3 bg-[#4F5C68]"></div>
+                    <span class="text-[16px] text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">ОГРНИП: 321774600123456</span>
+                    <div class="w-px h-3 bg-[#4F5C68]"></div>
+                    <span class="text-[16px] text-[#0F1113]" style="font-family: Geist; font-weight: 400; font-size: 16px; line-height: 1.3em;">ИНН: 771234567890</span>
+                </div>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
